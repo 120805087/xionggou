@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>购物</title>
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" href="css/bace.css" />
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/gouwu.css" />
+		<script src="js/bace.js"></script>
+		<script src="js/zepto.js"></script>
+		<script src="js/swiper.jquery.min.js"></script>
+		<script src="js/iscroll.js"></script>
+</head>
+<body onload="loaded()">
+<div id="header" style="border-bottom:1px solid #B2B2B2">
+	<span class="erweima iconfont icon-qrcode" style="opacity:0"></span>
+	<div class="serach active tuijie" style="position:relative">
+	          购物车 <a href="javascript:;">推介</a>
+	</div>
+	<span class="xiaoxi iconfont icon-xiaoxi"></span>
+</div>
+<div id="wrapper" style="top:45px">
+	<div id="scroller">
+		<div class="content-title">
+			<span class="iconfont icon-konggouwuche"></span>
+			<p>购物车没有商品哦</p>
+		</div>
+		<div class="content-love">
+			<p>猜你喜欢</p>
+		</div>
+		<div class="content-list">
+			<div>
+				<img src="img/6_03_03.png" alt="" />
+				<p class="title">三星Galaxy A7(SM-A7100)全网通4G手机双卡全网通4G手机双卡全网通4G手机双卡</p>
+				<p class="money">￥1599 <span>￥2699</span></p>
+			</div>
+			<div>
+				<img src="img/6_03_05.png" alt="" />
+				<p class="title">耐克NIKE Air Force 1High AF1小麦棕 空军1号高帮女空军1号高帮女空军1号高帮女</p>
+				<p class="money">￥799 <span>￥1599</span></p>
+			</div>
+		</div>
+		<div class="content-list">
+			<div>
+				<img src="img/6_03_05.png" alt="" />
+				<p class="title">三星Galaxy A7(SM-A7100)全网通4G手机双卡全网通4G手机双卡全网通4G手机双卡</p>
+				<p class="money">￥1599 <span>￥2699</span></p>
+			</div>
+			<div>
+				<img src="img/6_03_03.png" alt="" />
+				<p class="title">耐克NIKE Air Force 1High AF1小麦棕 空军1号高帮女空军1号高帮女空军1号高帮女</p>
+				<p class="money">￥799 <span>￥1599</span></p>
+			</div>
+		</div>
+		<div class="content-list">
+			<div>
+				<img src="img/6_03_03.png" alt="" />
+				<p class="title">三星Galaxy A7(SM-A7100)全网通4G手机双卡全网通4G手机双卡全网通4G手机双卡</p>
+				<p class="money">￥1599 <span>￥2699</span></p>
+			</div>
+			<div>
+				<img src="img/6_03_05.png" alt="" />
+				<p class="title">耐克NIKE Air Force 1High AF1小麦棕 空军1号高帮女空军1号高帮女空军1号高帮女</p>
+				<p class="money">￥799 <span>￥1599</span></p>
+			</div>
+		</div>
+		<div class="content-list">
+			<div>
+				<img src="img/6_03_05.png" alt="" />
+				<p class="title">三星Galaxy A7(SM-A7100)全网通4G手机双卡全网通4G手机双卡全网通4G手机双卡</p>
+				<p class="money">￥1599 <span>￥2699</span></p>
+			</div>
+			<div>
+				<img src="img/6_03_03.png" alt="" />
+				<p class="title">耐克NIKE Air Force 1High AF1小麦棕 空军1号高帮女空军1号高帮女空军1号高帮女</p>
+				<p class="money">￥799 <span>￥1599</span></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="footer">
+	<div id="shouye" class="active">
+		<span class="iconfont icon-shouyeshouye"></span>
+		<p>首页</p>
+	</div>
+	<div id="active">
+		<span class="iconfont icon-icon"></span>
+		<p>活动</p>
+	</div>
+	<div id="category">
+		<span class="iconfont icon-fenlei"></span>
+		<p>分类</p>
+	</div>
+	<div id="gouwu">
+		<span class="iconfont icon-jinlingyingcaiwangtubiao07"></span>
+		<p>购物车</p>
+	</div>
+	<div id="content">
+		<span class="iconfont icon-touxiang"></span>
+		<p>我的熊购</p>
+	</div>
+</div>
+	</body>
+	<script>
+			var myScroll;
+
+function loaded () {
+	resize(750);
+	myScroll = new IScroll('#wrapper', { mouseWheel: true });
+	
+	var time = new Date();
+	var hours = time.getHours();
+	var minutes = time.getMinutes();
+	var seconds = time.getSeconds();
+	$(".time .info .inner div:nth-child(1)").html(hours);
+	$(".time .info .inner div:nth-child(2)").html(minutes);
+	$(".time .info .inner div:nth-child(3)").html(seconds);
+	setInterval(function(){
+		var time = new Date();
+		 hours = time.getHours();
+		 minutes = time.getMinutes();
+		 seconds = time.getSeconds();
+		$(".time .info .inner div:nth-child(1)").html(hours);
+		$(".time .info .inner div:nth-child(2)").html(minutes);
+		$(".time .info .inner div:nth-child(3)").html(seconds);
+	},1000)
+	
+	 var swiper = new Swiper('.content-item .swiper-container', {
+        slidesPerView: 1.6,
+         centeredSlides: true,
+         loop:"true",
+        spaceBetween: 10
+    });
+    
+    document.getElementById("shouye").addEventListener("click",function(){
+				location.href = "index.html";
+			})
+    			document.getElementById("active").addEventListener("click",function(){
+				location.href = "active.html";
+			})
+    			document.getElementById("category").addEventListener("click",function(){
+				location.href = "category.html";
+			})
+    			document.getElementById("gouwu").addEventListener("click",function(){
+				location.href = "gowu.html";
+			})
+    			document.getElementById("content").addEventListener("click",function(){
+				location.href = "content.html";
+			})
+}
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+	</script>
+</html>

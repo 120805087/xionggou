@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>个人中心</title>
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" href="css/bace.css" />
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/content.css" />
+		<script src="js/bace.js"></script>
+		<script src="js/zepto.js"></script>
+		<script src="js/swiper.jquery.min.js"></script>
+		<script src="js/iscroll.js"></script>
+</head>
+<body onload="loaded()">
+<div id="header">
+	<span class="erweima iconfont icon-shezhi"></span>
+	<div class="serach active">
+	          活动
+	</div>
+	<span class="xiaoxi iconfont icon-xiaoxi"></span>
+</div>
+<div id="wrapper" style="top:45px">
+	<div id="scroller">
+		<div class="login">
+			<p>关注你感兴趣的品牌</p>
+			<p>第一时间发现更多新品、折扣</p>
+			<input id="btn" type="button" value="登录/注册"/>
+		</div>
+		<div class="content-list">
+			<div>
+				<p>0</p>
+				<p>我的考拉豆</p>
+			</div>
+			<div>
+				<p>0</p>
+				<p>我的收藏</p>
+			</div>
+			<div>
+				<p>0</p>
+				<p>关注的品牌</p>
+			</div>
+		</div>
+		<div class="dingdan content-item">
+			<span>我的订单</span>
+			<span>查看全部订单</span>
+			<span class="next iconfont icon-next"></span>
+		</div>
+		<div class="content-item-list">
+			<div>
+				<span class="iconfont icon-daifukuan"></span>
+				<p>待付款</p>
+			</div>
+			<div>
+				<span class="iconfont icon-daifahuo"></span>
+				<p>待发货</p>
+			</div>
+			<div>
+				<span class="iconfont icon-daishouhuo"></span>
+				<p>待收货</p>
+			</div>
+			<div>
+				<span class="iconfont icon-icon-test"></span>
+				<p>待评价</p>
+			</div>
+			<div>
+				<span class="iconfont icon-p-return"></span>
+				<p>退货退款</p>
+			</div>
+		</div>
+		<div class="content-item" style="margin-top:0">
+			<span>会员专区</span>
+			<span>立即开通优惠</span>
+			<span class="next iconfont icon-next"></span>
+		</div>
+		<div class="content-item" style="margin-top:0">
+			<span>我的优惠券</span>
+			<span>兑换优惠券</span>
+			<span class="next iconfont icon-next"></span>
+		</div>
+		<div class="content-item" style="margin-top:0">
+			<span>我的拼团</span>
+			<span>查看全部订单</span>
+			<span class="next iconfont icon-next"></span>
+		</div>
+		<div class="content-item" style="margin-top:0">
+			<span>邀请好友</span>
+			<span>查看全部订单</span>
+			<span class="next iconfont icon-next"></span>
+		</div>
+		<div class="content-item" style="margin-top:0">
+			<span>分享赚钱</span>
+			<span>查看全部订单</span>
+			<span class="next iconfont icon-next"></span>
+		</div>
+	</div>
+</div>
+
+<div id="footer">
+	<div id="shouye" class="active">
+		<span class="iconfont icon-shouyeshouye"></span>
+		<p>首页</p>
+	</div>
+	<div id="active">
+		<span class="iconfont icon-icon"></span>
+		<p>活动</p>
+	</div>
+	<div id="category">
+		<span class="iconfont icon-fenlei"></span>
+		<p>分类</p>
+	</div>
+	<div id="gouwu">
+		<span class="iconfont icon-jinlingyingcaiwangtubiao07"></span>
+		<p>购物车</p>
+	</div>
+	<div id="content">
+		<span class="iconfont icon-touxiang"></span>
+		<p>我的熊购</p>
+	</div>
+</div>
+<div id="loginArea">
+	<form action="" method="post">
+		<input id="user" type="text" placeholder="网易邮箱账号"/>
+		<input id="psaa" type="password"placeholder="网易邮箱密码" />
+		<input id="submit" type="submit" value="登&nbsp;录"/>
+	</form>
+	<div class="text">
+		<a href="javascript:;">忘记密码</a>
+		<a href="javascript:;">没有账号？</a>
+		<a href="javascript:;">注册网易邮箱&nbsp;<span>></span></a>
+	</div>
+	<div class="login-try">
+		<p class="title">或从以下的方式登录</p>
+		<div class="icon-area">
+			<div class="wb iconfont icon-weibo"></div>
+			<div class="wx iconfont icon-weixin"></div>
+			<div class="qq iconfont icon-qq"></div>
+			<div class="zfb iconfont icon-zhifubao"></div>
+		</div>
+	</div>
+</div>
+	</body>
+	<script>
+			var myScroll;
+
+function loaded () {
+	resize(750);
+	myScroll = new IScroll('#wrapper', { mouseWheel: true });
+	$("#btn").click(function(){
+		$("#loginArea").toggle();
+	})
+	document.getElementById("shouye").addEventListener("click",function(){
+				location.href = "index.html";
+			})
+    			document.getElementById("active").addEventListener("click",function(){
+				location.href = "active.html";
+			})
+    			document.getElementById("category").addEventListener("click",function(){
+				location.href = "category.html";
+			})
+    			document.getElementById("gouwu").addEventListener("click",function(){
+				location.href = "gowu.html";
+			})
+    			document.getElementById("content").addEventListener("click",function(){
+				location.href = "content.html";
+			})
+}
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+	</script>
+</html>

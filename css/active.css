@@ -1,0 +1,154 @@
+#header .active{
+	color:#000000;
+	font-size:0.38rem;
+	font-weight: bold;
+	text-align: center;
+	background:#fff;
+}
+#scroller .timeArea{
+	width:100%;
+	height:2.92rem;
+	background:#fff;
+	display: flex;
+}
+#scroller .timeArea div{
+	width:50%;
+	height:100%;
+}
+#scroller .timeArea .time .info{
+	width:2.62rem;
+	height:2.08rem;
+	margin-left:0.56rem;
+	margin-top:0.4rem;
+}
+#scroller .timeArea .tuijie img{
+	width:100%;
+	height:100%;
+}
+#scroller .timeArea .time .info .title{
+	color:#333333;
+	font-size:0.32rem;
+	margin-top:0.1rem;
+}
+#scroller .timeArea .time .info .inner{
+	width:100%;
+	height:0.72rem;
+	margin-top:0.32rem;
+	margin-bottom:0.3rem;
+	display: -webkit-box;
+	display: flex;
+	justify-content: space-between;
+}
+#scroller .timeArea .time .info .inner div{
+	width:0.72rem;
+	height:0.72rem;
+	background:#000000;
+	color:#fff;
+	font-size:0.44rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 0.72rem;
+	position: relative;
+}
+#scroller .timeArea .time .info .inner div:nth-child(1):after{
+	content: "";
+	display: block;
+	width:0.1rem;
+	height:0.1rem;
+	background:#000000;
+	position: absolute;
+	left:0.8rem;
+	top:0.2rem;
+	border-radius: 50%;
+}
+#scroller .timeArea .time .info .inner div:nth-child(2):before,#scroller .timeArea .time .info .inner div:nth-child(2):after{
+	content: "";
+	display: block;
+	width:0.1rem;
+	height:0.1rem;
+	background:#000000;
+	position: absolute;
+	left:-0.16rem;
+	top:0.4rem;
+	border-radius: 50%;
+}
+#scroller .timeArea .time .info .inner div:nth-child(2):after{
+	left:0.78rem;
+	top:0.2rem;
+}
+#scroller .timeArea .time .info .inner div:nth-child(3):before{
+	content: "";
+	display: block;
+	width:0.1rem;
+	height:0.1rem;
+	background:#000000;
+	position: absolute;
+	left:-0.16rem;
+	top:0.4rem;
+	border-radius: 50%;
+}
+#scroller .timeArea .time .info .next{
+	color:#333;
+	font-size:0.22rem;
+}
+#scroller .content-list{
+	width:100%;
+	border-top:1px solid #F0F0F0;
+	border-bottom:1px solid #F0F0F0;
+}
+#scroller .content-list ul{
+	display: -webkit-box;
+	display: flex;
+	flex-wrap: wrap;
+}
+#scroller .content-list ul li:nth-child(1){
+	width:50%;
+	height:3.74rem;
+	border-right:1px solid #F0F0F0;
+	border-bottom:1px solid #F0F0F0;
+	display: flex;
+}
+#scroller .content-list ul li:nth-child(2){
+	width:50%;
+	height:3.74rem;
+}
+#scroller .content-list ul li:nth-child(2) ul li{
+	width:100%;
+	height:1.87rem;
+	border-bottom:1px solid #F0F0F0;
+	display: flex;
+}
+#scroller .content-list ul li:nth-child(3){
+	width:50%;
+	height:1.87rem;
+	border-right:1px solid #F0F0F0;
+	border-bottom:1px solid #F0F0F0;
+	display: flex;
+}
+#scroller .content-list ul li:nth-child(4){
+	width:50%;
+	height:1.87rem;
+	border-bottom:1px solid #F0F0F0;
+	display: flex;
+}
+#scroller .content-list ul li a{
+	width:100%;
+	height:100%;
+}
+#scroller .content-list ul li a img{
+	width:100%;
+	height:100%;
+}
+#scroller .content-item{
+	width:100%;
+	height:2.48rem;
+	background:#fff;
+}
+#scroller .content-item .swiper-container{
+	width:100%;
+	height:100%;
+}
+#scroller .content-item .swiper-container img{
+	width:100%;
+	height:100%;
+}

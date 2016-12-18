@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>active</title>
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" href="css/bace.css" />
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/active.css" />
+		<script src="js/bace.js"></script>
+		<script src="js/zepto.js"></script>
+		<script src="js/swiper.jquery.min.js"></script>
+		<script src="js/iscroll.js"></script>
+</head>
+<body onload="loaded()">
+<div id="header" style="border-bottom:1px solid #B2B2B2">
+	<span class="erweima iconfont icon-qrcode"></span>
+	<div class="serach active">
+	          活动
+	</div>
+	<span class="xiaoxi iconfont icon-xiaoxi"></span>
+</div>
+<div id="wrapper" style="top:45px">
+	<div id="scroller">
+		<section class="timeArea">
+			<div class="time">
+				<div class="info">
+					<p class="title">手机限时购</p>
+					<div class="inner">
+						<div>00</div>
+						<div>00</div>
+						<div>00</div>
+					</div>
+					<p class="next">下一场 <span>17:00</span>开始</p>
+				</div>
+			</div>
+			<div class="tuijie">
+				<img src="img/4_03.png" alt="" />
+			</div>
+		</section>
+		<section class="content-list">
+			<ul>
+				<li>
+					<a href="javascript:;">
+						<img src="img/5_03.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<img src="img/5_04.png" alt="" />
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="img/5_05.png" alt="" />
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/5_06.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/5_07.png" alt="" />
+					</a>
+				</li>
+			</ul>
+		</section>
+		<section class="content-item">
+			<div class="swiper-container">
+				        <div class="swiper-wrapper">
+				            <div class="swiper-slide">
+				            	<img class="pic" src="img/5_09.png" alt="" />
+				            </div>
+				            <div class="swiper-slide">
+				            	<img class="pic" src="img/5_09.png" alt="" />
+				            </div>
+				             <div class="swiper-slide">
+				            	<img class="pic" src="img/5_09.png" alt="" />
+				            </div>
+				            <div class="swiper-slide">
+				            	<img class="pic" src="img/5_09.png" alt="" />
+				            </div>
+				             <div class="swiper-slide">
+				            	<img class="pic" src="img/5_09.png" alt="" />
+				            </div>
+				        </div>
+			    </div>
+		</section>
+		<section class="content-list">
+			<ul>
+				<li>
+					<a href="javascript:;">
+						<img src="img/5_03.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<img src="img/5_04.png" alt="" />
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="img/5_05.png" alt="" />
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/5_06.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/5_07.png" alt="" />
+					</a>
+				</li>
+			</ul>
+		</section>
+		<section class="content-item">
+			<div class="swiper-container">
+				        <div class="swiper-wrapper">
+				            <div class="swiper-slide">
+				            	<img class="pic" src="img/5_09.png" alt="" />
+				            </div>
+				            <div class="swiper-slide">
+				            	<img class="pic" src="img/5_09.png" alt="" />
+				            </div>
+				             <div class="swiper-slide">
+				            	<img class="pic" src="img/5_09.png" alt="" />
+				            </div>
+				            <div class="swiper-slide">
+				            	<img class="pic" src="img/5_09.png" alt="" />
+				            </div>
+				             <div class="swiper-slide">
+				            	<img class="pic" src="img/5_09.png" alt="" />
+				            </div>
+				        </div>
+			    </div>
+		</section>
+	</div>
+</div>
+
+<div id="footer">
+	<div id="shouye" class="active">
+		<span class="iconfont icon-shouyeshouye"></span>
+		<p>首页</p>
+	</div>
+	<div id="active">
+		<span class="iconfont icon-icon"></span>
+		<p>活动</p>
+	</div>
+	<div id="category">
+		<span class="iconfont icon-fenlei"></span>
+		<p>分类</p>
+	</div>
+	<div id="gouwu">
+		<span class="iconfont icon-jinlingyingcaiwangtubiao07"></span>
+		<p>购物车</p>
+	</div>
+	<div id="content">
+		<span class="iconfont icon-touxiang"></span>
+		<p>我的熊购</p>
+	</div>
+</div>
+	</body>
+	<script>
+			var myScroll;
+
+function loaded () {
+	resize(750);
+	myScroll = new IScroll('#wrapper', { mouseWheel: true });
+	
+	var time = new Date();
+	var hours = time.getHours();
+	var minutes = time.getMinutes();
+	var seconds = time.getSeconds();
+	$(".time .info .inner div:nth-child(1)").html(hours);
+	$(".time .info .inner div:nth-child(2)").html(minutes);
+	$(".time .info .inner div:nth-child(3)").html(seconds);
+	setInterval(function(){
+		var time = new Date();
+		 hours = time.getHours();
+		 minutes = time.getMinutes();
+		 seconds = time.getSeconds();
+		$(".time .info .inner div:nth-child(1)").html(hours);
+		$(".time .info .inner div:nth-child(2)").html(minutes);
+		$(".time .info .inner div:nth-child(3)").html(seconds);
+	},1000)
+	
+	 var swiper = new Swiper('.content-item .swiper-container', {
+        slidesPerView: 1.6,
+         centeredSlides: true,
+         loop:"true",
+        spaceBetween: 10
+    });
+    
+    			document.getElementById("shouye").addEventListener("click",function(){
+				location.href = "index.html";
+			})
+    			document.getElementById("active").addEventListener("click",function(){
+				location.href = "active.html";
+			})
+    			document.getElementById("category").addEventListener("click",function(){
+				location.href = "category.html";
+			})
+    			document.getElementById("gouwu").addEventListener("click",function(){
+				location.href = "gowu.html";
+			})
+    			document.getElementById("content").addEventListener("click",function(){
+				location.href = "content.html";
+			})
+}
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+	</script>
+</html>

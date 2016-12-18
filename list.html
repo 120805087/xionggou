@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>list</title>
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" href="css/bace.css" />
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/active.css" />
+		<script src="js/bace.js"></script>
+		<script src="js/zepto.js"></script>
+		<script src="js/swiper.jquery.min.js"></script>
+		<script src="js/iscroll.js"></script>
+</head>
+<style>
+	#scroller .content-banner{
+		width:100%;
+		height:4.7rem;
+	}
+	#scroller .content-banner a{
+		width: 100%;height:4.7rem;
+		display: block;
+	}
+	#scroller .content-banner a img{
+		width: 100%;height:4.7rem;
+	}
+	#content-nav{
+		width:100%;
+		height:0.9rem;
+		display: flex;
+		justify-content: space-around;
+		background:#fff;
+		border-bottom:1px solid #F1F1F1;
+	}
+	#content-nav a{
+		align-self: center;
+		color:#333333;
+		font-size:0.3rem;
+		padding:0.26rem 0.1rem;
+	}
+	#content-nav .active{
+		color:#D12147;
+		border-bottom:2px solid #D12147;
+	}
+	#scroller article{
+		width:100%;
+		height:1.18rem;
+		background:#fff;
+	}
+	#scroller article a{
+		width:100%;
+		height:100%;
+		display: block;
+	}
+	#scroller article a img{
+		width: 100%;
+		height:100%;
+	}
+	#scroller .sp-lists{
+		width:100%;
+		height:16.6rem;
+		padding:0.1rem 0.1rem 0;
+		background:#fff;
+	}
+	#scroller .sp-lists ul{
+		width:100%;
+		height:100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	#scroller .sp-lists ul li{
+		width:50%;
+		height:5.4rem;
+		margin-bottom:0.1rem;
+		padding-top:0.24rem;
+	}
+	#scroller .sp-lists .sp-list-pic{
+		width:3.6rem;
+		height:3.6rem;
+	    padding:0.08rem;
+	    background:url(img/itemcol2bg.png)repeat #fff ;
+	}
+	#scroller .sp-lists .sp-list-pic a{
+		width:100%;
+		height:100%;
+		display: block;
+		position: relative;
+	}
+	#scroller .sp-lists .sp-list-pic a img{
+		width:100%;
+		height:100%;
+	}
+	#scroller .sp-lists .sp-list-pic a span{
+		position: absolute;
+		left:0;
+		right:0;
+		margin:0 auto;
+		top:-0.2rem;
+		color:#333333;
+		font-size:0.4rem;
+		width:80%;
+		line-height: 0.4rem;
+		text-align: center;
+		overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        z-index:10;
+	}
+	#scroller .sp-lists .sp-list-pic a span:before{
+		content:"";
+		position: absolute;
+		left:0;
+		top:0;
+		width:100%;
+		height:0.4rem;
+		background:#fff;
+		z-index:-1;
+	}
+	#scroller .sp-list .sp-list-text{
+		width:100%;
+		height:1.72rem;
+		padding:0.16rem 0.2rem;
+		text-align: center;
+	}
+	#scroller .sp-list .sp-list-text .sp-title{
+		    height: 0.72rem;
+		    display: -webkit-box;
+		    -webkit-box-orient: vertical;
+		    -webkit-line-clamp: 2;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    white-space: normal;
+		    line-height: 0.36rem;
+		    font-size:0.32rem;
+		    color:#333;
+	}
+	#scroller .sp-list .sp-list-text .sp-monmy{
+		    height: 0.4rem;
+		    margin: 0.1rem 0 0;
+		    line-height:0.4rem;
+		    color: #e31436;
+		    font-size:0.32rem;
+	}
+	i{
+		font-style: normal;
+	}
+	#scroller .sp-list .sp-list-text .sp-monmy span:nth-child(1) i{
+		font-size:0.36rem;
+		font-weight: bold;
+	}
+	#scroller .sp-list .sp-list-text .sp-monmy span:nth-child(2){
+		color:#999999;
+		font-size:0.3rem;
+		text-decoration: line-through;
+	}
+</style>
+<body onload="loaded()">
+<div id="header" style="border-bottom:1px solid #B2B2B2">
+	<span class="erweima iconfont icon-xiayibu-copy"></span>
+	<div class="serach active">
+	      [双12]进口好货
+	</div>
+	<span class="xiaoxi iconfont icon-xiaoxi" style="visibility: hidden;"></span>
+</div>
+<div id="wrapper" style="top:45px;bottom:0">
+	<div id="scroller">
+		<section class="content-banner">
+		     <a href=""><img src="img/ivm00gbb69_960_675.jpg" alt="" /></a>
+		</section>
+		<nav id="content-nav">
+			<a class="active" href="javascript:;">新人专享</a>
+			<a href="javascript:;">母婴</a>
+			<a href="javascript:;">美容彩妆</a>
+			<a href="javascript:;">居家好礼</a>
+		</nav>
+		<article>
+			<a href="javascript:;">
+				<img src="img/it2r12yu33_640_100.jpg" alt="" />
+			</a>
+		</article>
+		<!--商品展示-->
+		<div class="sp-lists">
+			<ul>
+				<li class="sp-list">
+					<!--商品文字-->
+					<div class="sp-list-pic">
+						<a href="">
+							<img src="img/onlinei639mydl10036.jpg" alt="" />
+							<span>NMF天然保湿因子，夜晚做个睡美人</span>
+						</a>
+					</div>
+					<!--商品图片-->
+					<div class="sp-list-text">
+					     <a class="sp-title" href="">3件装 | 【新人专享】MEDIHEAL 美迪恵尔 N.M.F水润保湿免洗睡眠面膜膏 15毫升</a>
+					     <p class="sp-monmy">
+					     	<span>新人价￥<i>9.9</i></span>
+					     	<span>￥11</span>
+					     </p>
+					</div>
+				</li>
+				<li class="sp-list">
+					<!--商品文字-->
+					<div class="sp-list-pic">
+						<a href="">
+							<img src="img/onlinei639mydl10036.jpg" alt="" />
+							<span>NMF天然保湿因子，夜晚做个睡美人</span>
+						</a>
+					</div>
+					<!--商品图片-->
+					<div class="sp-list-text">
+					     <a class="sp-title" href="">3件装 | 【新人专享】MEDIHEAL 美迪恵尔 N.M.F水润保湿免洗睡眠面膜膏 15毫升</a>
+					     <p class="sp-monmy">
+					     	<span>新人价￥<i>9.9</i></span>
+					     	<span>￥11</span>
+					     </p>
+					</div>
+				</li>
+				<li class="sp-list">
+					<!--商品文字-->
+					<div class="sp-list-pic">
+						<a href="">
+							<img src="img/onlinei639mydl10036.jpg" alt="" />
+							<span>NMF天然保湿因子，夜晚做个睡美人</span>
+						</a>
+					</div>
+					<!--商品图片-->
+					<div class="sp-list-text">
+					     <a class="sp-title" href="">3件装 | 【新人专享】MEDIHEAL 美迪恵尔 N.M.F水润保湿免洗睡眠面膜膏 15毫升</a>
+					     <p class="sp-monmy">
+					     	<span>新人价￥<i>9.9</i></span>
+					     	<span>￥11</span>
+					     </p>
+					</div>
+				</li>
+				<li class="sp-list">
+					<!--商品文字-->
+					<div class="sp-list-pic">
+						<a href="">
+							<img src="img/onlinei639mydl10036.jpg" alt="" />
+							<span>NMF天然保湿因子，夜晚做个睡美人</span>
+						</a>
+					</div>
+					<!--商品图片-->
+					<div class="sp-list-text">
+					     <a class="sp-title" href="">3件装 | 【新人专享】MEDIHEAL 美迪恵尔 N.M.F水润保湿免洗睡眠面膜膏 15毫升</a>
+					     <p class="sp-monmy">
+					     	<span>新人价￥<i>9.9</i></span>
+					     	<span>￥11</span>
+					     </p>
+					</div>
+				</li>
+				<li class="sp-list">
+					<!--商品文字-->
+					<div class="sp-list-pic">
+						<a href="">
+							<img src="img/onlinei639mydl10036.jpg" alt="" />
+							<span>NMF天然保湿因子，夜晚做个睡美人</span>
+						</a>
+					</div>
+					<!--商品图片-->
+					<div class="sp-list-text">
+					     <a class="sp-title" href="">3件装 | 【新人专享】MEDIHEAL 美迪恵尔 N.M.F水润保湿免洗睡眠面膜膏 15毫升</a>
+					     <p class="sp-monmy">
+					     	<span>新人价￥<i>9.9</i></span>
+					     	<span>￥11</span>
+					     </p>
+					</div>
+				</li>
+				<li class="sp-list">
+					<!--商品文字-->
+					<div class="sp-list-pic">
+						<a href="">
+							<img src="img/onlinei639mydl10036.jpg" alt="" />
+							<span>NMF天然保湿因子，夜晚做个睡美人</span>
+						</a>
+					</div>
+					<!--商品图片-->
+					<div class="sp-list-text">
+					     <a class="sp-title" href="">3件装 | 【新人专享】MEDIHEAL 美迪恵尔 N.M.F水润保湿免洗睡眠面膜膏 15毫升</a>
+					     <p class="sp-monmy">
+					     	<span>新人价￥<i>9.9</i></span>
+					     	<span>￥11</span>
+					     </p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<article>
+			<a href="javascript:;">
+				<img src="img/ir7hr9gz15_640_100.jpg" alt="" />
+			</a>
+		</article>
+		<!--商品展示-->
+		<div class="sp-lists">
+			<ul>
+				<li class="sp-list">
+					<!--商品文字-->
+					<div class="sp-list-pic">
+						<a href="">
+							<img src="img/onlinei93tttjl10149.jpg" alt="" />
+							<span>NMF天然保湿因子，夜晚做个睡美人</span>
+						</a>
+					</div>
+					<!--商品图片-->
+					<div class="sp-list-text">
+					     <a class="sp-title" href="">3件装 | 【新人专享】MEDIHEAL 美迪恵尔 N.M.F水润保湿免洗睡眠面膜膏 15毫升</a>
+					     <p class="sp-monmy">
+					     	<span>新人价￥<i>9.9</i></span>
+					     	<span>￥11</span>
+					     </p>
+					</div>
+				</li>
+				<li class="sp-list">
+					<!--商品文字-->
+					<div class="sp-list-pic">
+						<a href="">
+							<img src="img/onlinei93tttjl10149.jpg" alt="" />
+							<span>NMF天然保湿因子，夜晚做个睡美人</span>
+						</a>
+					</div>
+					<!--商品图片-->
+					<div class="sp-list-text">
+					     <a class="sp-title" href="">3件装 | 【新人专享】MEDIHEAL 美迪恵尔 N.M.F水润保湿免洗睡眠面膜膏 15毫升</a>
+					     <p class="sp-monmy">
+					     	<span>新人价￥<i>9.9</i></span>
+					     	<span>￥11</span>
+					     </p>
+					</div>
+				</li>
+				<li class="sp-list">
+					<!--商品文字-->
+					<div class="sp-list-pic">
+						<a href="">
+							<img src="img/onlinei93tttjl10149.jpg" alt="" />
+							<span>NMF天然保湿因子，夜晚做个睡美人</span>
+						</a>
+					</div>
+					<!--商品图片-->
+					<div class="sp-list-text">
+					     <a class="sp-title" href="">3件装 | 【新人专享】MEDIHEAL 美迪恵尔 N.M.F水润保湿免洗睡眠面膜膏 15毫升</a>
+					     <p class="sp-monmy">
+					     	<span>新人价￥<i>9.9</i></span>
+					     	<span>￥11</span>
+					     </p>
+					</div>
+				</li>
+				<li class="sp-list">
+					<!--商品文字-->
+					<div class="sp-list-pic">
+						<a href="">
+							<img src="img/onlinei93tttjl10149.jpg" alt="" />
+							<span>NMF天然保湿因子，夜晚做个睡美人</span>
+						</a>
+					</div>
+					<!--商品图片-->
+					<div class="sp-list-text">
+					     <a class="sp-title" href="">3件装 | 【新人专享】MEDIHEAL 美迪恵尔 N.M.F水润保湿免洗睡眠面膜膏 15毫升</a>
+					     <p class="sp-monmy">
+					     	<span>新人价￥<i>9.9</i></span>
+					     	<span>￥11</span>
+					     </p>
+					</div>
+				</li>
+				<li class="sp-list">
+					<!--商品文字-->
+					<div class="sp-list-pic">
+						<a href="">
+							<img src="img/onlinei93tttjl10149.jpg" alt="" />
+							<span>NMF天然保湿因子，夜晚做个睡美人</span>
+						</a>
+					</div>
+					<!--商品图片-->
+					<div class="sp-list-text">
+					     <a class="sp-title" href="">3件装 | 【新人专享】MEDIHEAL 美迪恵尔 N.M.F水润保湿免洗睡眠面膜膏 15毫升</a>
+					     <p class="sp-monmy">
+					     	<span>新人价￥<i>9.9</i></span>
+					     	<span>￥11</span>
+					     </p>
+					</div>
+				</li>
+				<li class="sp-list">
+					<!--商品文字-->
+					<div class="sp-list-pic">
+						<a href="">
+							<img src="img/onlinei93tttjl10149.jpg" alt="" />
+							<span>NMF天然保湿因子，夜晚做个睡美人</span>
+						</a>
+					</div>
+					<!--商品图片-->
+					<div class="sp-list-text">
+					     <a class="sp-title" href="">3件装 | 【新人专享】MEDIHEAL 美迪恵尔 N.M.F水润保湿免洗睡眠面膜膏 15毫升</a>
+					     <p class="sp-monmy">
+					     	<span>新人价￥<i>9.9</i></span>
+					     	<span>￥11</span>
+					     </p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<article>
+			<a href="javascript:;">
+				<img src="img/ir7hk8nd38_640_100.jpg" alt="" />
+			</a>
+		</article>
+		<!--商品展示-->
+		<div class="sp-lists">
+			<ul>
+				<li class="sp-list">
+					<!--商品文字-->
+					<div class="sp-list-pic">
+						<a href="">
+							<img src="img/onlinei639mydl10036.jpg" alt="" />
+							<span>NMF天然保湿因子，夜晚做个睡美人</span>
+						</a>
+					</div>
+					<!--商品图片-->
+					<div class="sp-list-text">
+					     <a class="sp-title" href="">3件装 | 【新人专享】MEDIHEAL 美迪恵尔 N.M.F水润保湿免洗睡眠面膜膏 15毫升</a>
+					     <p class="sp-monmy">
+					     	<span>新人价￥<i>9.9</i></span>
+					     	<span>￥11</span>
+					     </p>
+					</div>
+				</li>
+				<li class="sp-list">
+					<!--商品文字-->
+					<div class="sp-list-pic">
+						<a href="">
+							<img src="img/onlinei639mydl10036.jpg" alt="" />
+							<span>NMF天然保湿因子，夜晚做个睡美人</span>
+						</a>
+					</div>
+					<!--商品图片-->
+					<div class="sp-list-text">
+					     <a class="sp-title" href="">3件装 | 【新人专享】MEDIHEAL 美迪恵尔 N.M.F水润保湿免洗睡眠面膜膏 15毫升</a>
+					     <p class="sp-monmy">
+					     	<span>新人价￥<i>9.9</i></span>
+					     	<span>￥11</span>
+					     </p>
+					</div>
+				</li>
+				<li class="sp-list">
+					<!--商品文字-->
+					<div class="sp-list-pic">
+						<a href="">
+							<img src="img/onlinei639mydl10036.jpg" alt="" />
+							<span>NMF天然保湿因子，夜晚做个睡美人</span>
+						</a>
+					</div>
+					<!--商品图片-->
+					<div class="sp-list-text">
+					     <a class="sp-title" href="">3件装 | 【新人专享】MEDIHEAL 美迪恵尔 N.M.F水润保湿免洗睡眠面膜膏 15毫升</a>
+					     <p class="sp-monmy">
+					     	<span>新人价￥<i>9.9</i></span>
+					     	<span>￥11</span>
+					     </p>
+					</div>
+				</li>
+				<li class="sp-list">
+					<!--商品文字-->
+					<div class="sp-list-pic">
+						<a href="">
+							<img src="img/onlinei639mydl10036.jpg" alt="" />
+							<span>NMF天然保湿因子，夜晚做个睡美人</span>
+						</a>
+					</div>
+					<!--商品图片-->
+					<div class="sp-list-text">
+					     <a class="sp-title" href="">3件装 | 【新人专享】MEDIHEAL 美迪恵尔 N.M.F水润保湿免洗睡眠面膜膏 15毫升</a>
+					     <p class="sp-monmy">
+					     	<span>新人价￥<i>9.9</i></span>
+					     	<span>￥11</span>
+					     </p>
+					</div>
+				</li>
+				<li class="sp-list">
+					<!--商品文字-->
+					<div class="sp-list-pic">
+						<a href="">
+							<img src="img/onlinei639mydl10036.jpg" alt="" />
+							<span>NMF天然保湿因子，夜晚做个睡美人</span>
+						</a>
+					</div>
+					<!--商品图片-->
+					<div class="sp-list-text">
+					     <a class="sp-title" href="">3件装 | 【新人专享】MEDIHEAL 美迪恵尔 N.M.F水润保湿免洗睡眠面膜膏 15毫升</a>
+					     <p class="sp-monmy">
+					     	<span>新人价￥<i>9.9</i></span>
+					     	<span>￥11</span>
+					     </p>
+					</div>
+				</li>
+				<li class="sp-list">
+					<!--商品文字-->
+					<div class="sp-list-pic">
+						<a href="">
+							<img src="img/onlinei639mydl10036.jpg" alt="" />
+							<span>NMF天然保湿因子，夜晚做个睡美人</span>
+						</a>
+					</div>
+					<!--商品图片-->
+					<div class="sp-list-text">
+					     <a class="sp-title" href="">3件装 | 【新人专享】MEDIHEAL 美迪恵尔 N.M.F水润保湿免洗睡眠面膜膏 15毫升</a>
+					     <p class="sp-monmy">
+					     	<span>新人价￥<i>9.9</i></span>
+					     	<span>￥11</span>
+					     </p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<article>
+			<a href="javascript:;">
+				<img src="img/ir7hv0yx89_640_100.jpg" alt="" />
+			</a>
+		</article>
+		<!--商品展示-->
+		<div class="sp-lists">
+			<ul>
+				<li class="sp-list">
+					<!--商品文字-->
+					<div class="sp-list-pic">
+						<a href="">
+							<img src="img/onlinei93tttjl10149.jpg" alt="" />
+							<span>NMF天然保湿因子，夜晚做个睡美人</span>
+						</a>
+					</div>
+					<!--商品图片-->
+					<div class="sp-list-text">
+					     <a class="sp-title" href="">3件装 | 【新人专享】MEDIHEAL 美迪恵尔 N.M.F水润保湿免洗睡眠面膜膏 15毫升</a>
+					     <p class="sp-monmy">
+					     	<span>新人价￥<i>9.9</i></span>
+					     	<span>￥11</span>
+					     </p>
+					</div>
+				</li>
+				<li class="sp-list">
+					<!--商品文字-->
+					<div class="sp-list-pic">
+						<a href="">
+							<img src="img/onlinei93tttjl10149.jpg" alt="" />
+							<span>NMF天然保湿因子，夜晚做个睡美人</span>
+						</a>
+					</div>
+					<!--商品图片-->
+					<div class="sp-list-text">
+					     <a class="sp-title" href="">3件装 | 【新人专享】MEDIHEAL 美迪恵尔 N.M.F水润保湿免洗睡眠面膜膏 15毫升</a>
+					     <p class="sp-monmy">
+					     	<span>新人价￥<i>9.9</i></span>
+					     	<span>￥11</span>
+					     </p>
+					</div>
+				</li>
+				<li class="sp-list">
+					<!--商品文字-->
+					<div class="sp-list-pic">
+						<a href="">
+							<img src="img/onlinei93tttjl10149.jpg" alt="" />
+							<span>NMF天然保湿因子，夜晚做个睡美人</span>
+						</a>
+					</div>
+					<!--商品图片-->
+					<div class="sp-list-text">
+					     <a class="sp-title" href="">3件装 | 【新人专享】MEDIHEAL 美迪恵尔 N.M.F水润保湿免洗睡眠面膜膏 15毫升</a>
+					     <p class="sp-monmy">
+					     	<span>新人价￥<i>9.9</i></span>
+					     	<span>￥11</span>
+					     </p>
+					</div>
+				</li>
+				<li class="sp-list">
+					<!--商品文字-->
+					<div class="sp-list-pic">
+						<a href="">
+							<img src="img/onlinei93tttjl10149.jpg" alt="" />
+							<span>NMF天然保湿因子，夜晚做个睡美人</span>
+						</a>
+					</div>
+					<!--商品图片-->
+					<div class="sp-list-text">
+					     <a class="sp-title" href="">3件装 | 【新人专享】MEDIHEAL 美迪恵尔 N.M.F水润保湿免洗睡眠面膜膏 15毫升</a>
+					     <p class="sp-monmy">
+					     	<span>新人价￥<i>9.9</i></span>
+					     	<span>￥11</span>
+					     </p>
+					</div>
+				</li>
+				<li class="sp-list">
+					<!--商品文字-->
+					<div class="sp-list-pic">
+						<a href="">
+							<img src="img/onlinei93tttjl10149.jpg" alt="" />
+							<span>NMF天然保湿因子，夜晚做个睡美人</span>
+						</a>
+					</div>
+					<!--商品图片-->
+					<div class="sp-list-text">
+					     <a class="sp-title" href="">3件装 | 【新人专享】MEDIHEAL 美迪恵尔 N.M.F水润保湿免洗睡眠面膜膏 15毫升</a>
+					     <p class="sp-monmy">
+					     	<span>新人价￥<i>9.9</i></span>
+					     	<span>￥11</span>
+					     </p>
+					</div>
+				</li>
+				<li class="sp-list">
+					<!--商品文字-->
+					<div class="sp-list-pic">
+						<a href="">
+							<img src="img/onlinei93tttjl10149.jpg" alt="" />
+							<span>NMF天然保湿因子，夜晚做个睡美人</span>
+						</a>
+					</div>
+					<!--商品图片-->
+					<div class="sp-list-text">
+					     <a class="sp-title" href="">3件装 | 【新人专享】MEDIHEAL 美迪恵尔 N.M.F水润保湿免洗睡眠面膜膏 15毫升</a>
+					     <p class="sp-monmy">
+					     	<span>新人价￥<i>9.9</i></span>
+					     	<span>￥11</span>
+					     </p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+	</body>
+	<script>
+			var myScroll;
+
+function loaded () {
+	resize(750);
+	myScroll = new IScroll('#wrapper', { mouseWheel: true });
+
+}
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+	</script>
+</html>

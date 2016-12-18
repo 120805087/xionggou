@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>查询页面</title>
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" href="css/bace.css" />
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/active.css" />
+		<script src="js/bace.js"></script>
+		<script src="js/zepto.js"></script>
+		<script src="js/swiper.jquery.min.js"></script>
+		<script src="js/iscroll.js"></script>
+</head>
+<style>
+	#header div{
+		width:7.2rem;
+		height:0.56rem;
+		background:#EAEBED;
+		border-radius:0.1rem;
+		align-self: center;
+		margin-left:0.15rem;
+		display: flex;
+	}
+	#header div label{
+		width: 0.6rem;
+		align-self: center;
+		padding-left:0.1rem;
+	}
+	#header div input{
+		width:6.6rem;
+		height:100%;
+		border:0;
+		outline: 0;
+		background:#EAEBED;
+		border-radius:0.1rem;
+	}
+	#wrapper{
+		background: #FFFFFF;
+	}
+	#scroller section{
+		width:7.2rem;
+		margin:0 auto;
+	}
+	#scroller section p{
+		margin-top:0.2rem;
+		color:#333333;
+		font-size:0.36rem;
+		font-weight: bold;
+	}
+	#scroller section div{
+		margin-top:0.15rem;
+		width:100%;
+		height:0.5rem;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	#scroller section div span{
+		color:#333333;
+		font-size:0.32rem;
+		align-self: center;
+		padding:0.1rem 0.2rem;
+		border:1px solid #DCDCDC;
+		border-radius:0.1rem;
+		margin-right:0.15rem;
+		margin-top:0.2rem;
+	}
+	#scroller section .active{
+		color:#FD8487;
+		border-color:#FD8487;
+	}
+</style>
+<body onload="loaded()">
+<div id="header">
+	<div>
+		<label for="search" class="iconfont icon-sousuo"></label>
+		<input type="search" placeholder="520大礼包欢乐1212购"/>
+	</div>
+</div>
+<div id="wrapper" style="top:45px">
+	<div id="scroller">
+		<section>
+			<p>最近搜索</p>
+			<div>
+				<span>三星note7</span><span>6s</span>
+			</div>	
+		</section>
+		<section style="margin-top:0.5rem">
+			<p>热门搜索</p>
+			<div>
+				<span>三星note7</span><span>6s</span><span>牛栏</span>
+				<span>三星note7</span><span>6s</span><span class="active">保暖内衣</span>
+				<span>三星note7</span><span class="active">6s</span><span>牛栏</span>
+				<span>三星note7</span><span>6s</span><span>牛栏</span>
+				<span>三星note7</span><span>6s</span><span>牛栏</span>
+				<span>三星note7</span><span>6s</span><span>牛栏</span>
+				<span>三星note7</span><span class="active">6s</span><span>牛栏</span>
+				<span>三星note7</span><span>6s</span><span>牛栏</span>
+				<span>三星note7</span><span>6s</span><span>牛栏</span>
+				<span>三星note7</span><span>6s</span><span class="active">牛栏</span>
+				<span class="active">三星note7</span><span>6s</span><span>牛栏</span>
+			</div>	
+		</section>
+	</div>
+</div>
+	</body>
+	<script>
+			var myScroll;
+
+function loaded () {
+	resize(750);
+	myScroll = new IScroll('#wrapper', { mouseWheel: true });
+	
+}
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+	</script>
+</html>

@@ -1,0 +1,576 @@
+ #header{
+     	background:transparent;
+     	border:none;
+     }
+     #header span:before{
+     	color:#CCCCCC;
+     }
+     #scroller .content-banner{
+     	width:100%;
+     	height:9rem;
+     	position: relative;
+     }
+     #scroller .content-banner img{
+     	width:100%;
+     	height:9.9rem;
+     	position: absolute;
+     	left:0;
+     	top:-45px;
+     	z-index: 2;
+     }
+     #scroller .primary-info{
+     	width:100%;
+     	height:3rem;
+     	background:#FFFFFF;
+     	border-top:1px solid #fff;
+     }
+     #scroller .primary-info .info-title{
+     	line-height: .4rem;
+	    margin-top: .38rem;
+	    color: #424242;
+	    font-size: .32rem;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	    overflow: hidden;
+	    padding:0 0.3rem;
+	    text-align: center;
+     }
+     #scroller .primary-info .info-desc{
+     	    line-height: .42rem;
+		    margin-top: .16rem;
+		    color: #999;
+		    font-size: .32rem;
+		    text-overflow: ellipsis;
+		    white-space: nowrap;
+		    overflow: hidden;
+		     padding:0 0.3rem;
+	       text-align: center; 
+     }
+     #scroller .primary-info .info-pic{
+     	    height: .44rem;
+            margin-top: .24rem;
+            display: flex;
+            justify-content: center;
+     }
+     #scroller .info-pic .now{
+     	line-height: .44rem;
+	    color: #f36;
+	    font-size: .44rem;
+     }
+     #scroller .info-pic .market{
+     	line-height: .28rem;
+	    margin: .14rem 0 0 .15rem;
+	    color: #999;
+	    font-size: .28rem;
+	    text-decoration: line-through;
+     }
+     #scroller .info-pic .disccont{
+     	height: .32rem;
+	    line-height: .32rem;
+	    margin: 0 0 0 .15rem;
+	    padding: 0 .12rem;
+	    color: #fff;
+	    font-size: .22rem;
+	    background: #ec312d;
+	    border-radius: .2rem;
+     }
+     #scroller .info-other{
+     	margin: .4rem .3rem .3rem;
+     	display: flex;
+     }
+     #scroller .info-other span{
+	    width: 2rem;
+	    line-height: .36rem;
+	    border-right: 1px solid #dbdbdb;
+	    color: #999;
+	    font-size: .26rem;
+	    text-align: center;
+     }
+     #scroller .info-other span:nth-child(3){
+     	border:none;
+     }
+     #scroller .primary-promotions{
+     	border-top: 1px solid #eaeaea;
+        background: #fafafa;
+     }
+     #scroller .primary-promotions .inner{
+     	display: block;
+    	padding: .3rem;
+    	height: 0.9rem;
+     }
+     #scroller .primary-promotions .inner span:nth-child(1){
+     	float: left;
+	    max-width: 5.75rem;
+	    overflow: hidden;
+	    white-space: nowrap;
+	    text-overflow: ellipsis;
+	    position: relative;
+	    color: #333;
+	    font-size: .3rem;
+	    line-height: .3rem;
+	    padding-left: .25rem;
+	    margin-right: .3rem;
+     }
+     #scroller .primary-promotions .inner span:nth-child(1) i{
+     	    position: absolute;
+		    left: 0;
+		    top: .1rem;
+		    border: .05rem solid #f13e3a;
+		    border-radius: 50%;
+		    font-size: 0;
+		    line-height: 0;
+		    vertical-align: middle;
+     }
+      #scroller .primary-promotions .inner span:nth-child(2){
+     	float: right;
+     	color: #666;
+    	font-size: .28rem;
+    	line-height: .3rem;
+     }
+     #scroller .shop-show{
+     	width:100%;
+     	height:4.64rem;
+     	margin-top:0.2rem;
+     	margin-bottom:0.2rem;
+        background:#fff;
+     }
+     #scroller .shop-info{
+     	width:100%;
+     	height:1.34rem;
+     	padding:0.4rem 0.3rem 0;
+     	position: relative;
+     }
+     .shop-info .shop-touxiang{
+     	float:left;
+     	width:0.94rem;
+     	height:0.94rem;
+     	border:1px solid #ddd;
+     }
+     .shop-info .shop-touxiang img{
+     	width:100%;
+     	height:100%;
+     }
+     .shop-info .shop-text{
+     	margin-left:1.1rem;
+     }
+     .shop-info .shop-text .title{
+     	line-height: .32rem;
+	    margin-top: .1rem;
+	    color: #424242;
+	    font-size: .32rem;
+     }
+     .shop-info .shop-text .content{
+     	margin-top: .24rem;
+    	font-size: 0;
+     }
+     .shop-info .shop-text .content span:nth-child(1){
+     	    display: inline-block;
+		    line-height: .24rem;
+		    color: #999;
+		    font-size: .24rem;
+     }
+      .shop-info .shop-text .content span:nth-child(2){
+     	    display: inline-block;
+		    line-height: .24rem;
+		    color: #999;
+		    font-size: .24rem;
+     }
+     .shop-info .goshop{
+     	    position: absolute;
+		    right: .3rem;
+		    top: 0.5rem;
+		    font-size: .26rem;
+		    text-align: center;
+		    width: 2rem;
+		    height: 0.65rem;
+		    line-height: 0.65rem;
+		    border-radius: .08rem;
+     }
+      .shop-info .goshop img{
+	      	width:100%;
+	      	height:100%;
+      }
+      .shop-evaluate{
+      	padding:0.3rem;
+      }
+      .shop-evaluate ul{
+      	display: flex;
+      }
+      .shop-evaluate ul li{
+      	width:33.3333%;
+      	display: flex;
+      }
+      .shop-evaluate ul li span{
+	    color: #666;
+	    font-size: .26rem;
+      }
+      .shop-evaluate ul li em{
+	    color: #f13e3a;
+	    font-size: .26rem;
+	    margin-left:0.1rem;
+	    font-style:normal;
+      }
+      .shop-evaluate ul li i{
+      	font-style:normal;
+      	width:0.24rem;
+      	height:0.24rem;
+	    line-height: .24rem;
+	    margin-left: .1rem;
+	    color: #f6f6f6;
+	    font-size: .2rem;
+	    text-align: center;
+	    background: #f13e3a;
+      }
+      .shop-services{
+      	width:100%;
+      	padding:0 0.3rem;
+      	border-top:1px solid #e5e5e5;
+      }
+      .shop-services ul{
+      	 padding-top:0.1rem;
+      	 display: flex;
+      	 flex-wrap: wrap;
+      }
+      .shop-services ul li{
+      	width:50%;
+      	margin-top:0.2rem;
+      	display: flex;
+      }
+      .shop-services ul li img{
+      	width:0.44rem;
+      	height:0.44rem;
+      }
+      .shop-services ul li span{
+      	line-height: .44rem;
+	    margin-left: .1rem;
+	    color: #666;
+	    font-size: .24rem;
+	    vertical-align: middle;
+      }
+      .detail-wrap{
+      	background:#fff;
+      	overflow: hidden;
+      }
+      .detail-heade{
+      	width:100%;
+      	margin-top:0.2rem;
+      	height:0.71rem;
+      }
+      .detail-heade ul{
+      	display: flex;
+      	border-bottom:1px solid #eee;
+      }
+      .detail-heade ul li{
+      	width:25%;
+      	padding:0.2rem 0;
+      	position: relative;
+      }
+      .detail-heade .active span{
+      	 color: #f13e3a;
+      }
+      .detail-heade .active i{
+      	display: block;
+      }
+      .detail-heade ul li span{
+      	display: block;
+	    line-height: .3rem;
+	    border-right: 1px solid #e5e5e5;
+	    color: #333;
+	    font-size: .3rem;
+	    text-align: center;
+      }
+      .detail-heade ul li i{
+      	position: absolute;
+	    bottom: -1px;
+	    left: 0;
+	    display: none;
+	    width: 100%;
+	    height: .04rem;
+	    min-height: 1px;
+	    background: #f13e3a;
+	    font-size: 0;
+      }
+      .detail-heade ul li span:nth-child(4){
+      	border:none;
+      }
+      .pic-show-warp{
+      	width:100%;
+      	overflow: hidden;
+      }
+      .pic-show-warp .pic-show{
+      	margin-top:0.4rem;
+      }
+      .pic-show-text{
+      	width:100%;
+      	height:1.46rem;
+      	padding:0 0.3rem;
+      }
+      .pic-show-text .start , .pic-show-text .end{
+      	float:left;
+      	width:1.8rem;
+      	height:1px;
+      	background:#a3a3a5;
+      	position:relative;
+      }
+      .pic-show-text .text{
+      	    padding: .3rem 0;
+		    color: #727272;
+		    font-size: .28rem;
+      }
+      .pic-show-text .end{
+      	float:right;
+      }
+      .pic-show-text .start:after , .pic-show-text .end:after{
+      	 content: "";
+      	 display: block;
+      	 width:0.1rem;
+      	 height:0.1rem;
+      	 position:absolute;
+      	 background:#000;
+      	 top:-0.05rem;
+      	 border-radius: 50%;
+      }
+      .pic-show-text .start:after{
+      	left:0;
+      }
+      .pic-show-text .end:after{
+      	right:0;
+      }
+      .pic-pics{
+      	width:100%;
+      	margin-top:0.15rem;
+      }
+     .pic-box .pic-title{
+     	 margin-top: .15rem;
+	    height: 0.5rem;
+	    line-height: 0.5rem;
+	    text-indent: .3rem;
+	    color: #303030;
+	    font-weight: 400;
+	    font-size: .3rem;
+     }
+     .pic-box .pic-list img{
+     	width:100%;
+     }
+     #shop-chanshu{
+     	width:100%;
+     }
+     .shop-chanshuTop{
+     	width:100%;
+     	height:0.2rem;
+     	background:#eaeaea;
+     	border-top:1px solid #dedede;
+     }
+     .shop-head{
+     	width:100%;
+     	height:1rem;
+     	padding:0 0.3rem;
+     	 line-height: .5rem;
+     }
+     .shop-head span{
+		color: #333;
+		font-size: .3rem;
+     }
+     .chanshu-list{
+     	width:100%;
+     	padding:0 0.3rem;
+     }
+     .chanshu-list ul{
+     	border-bottom: 1px solid #f4f4f4;
+     	display: flex;
+     }
+     .chanshu-list ul li:nth-child(1){
+     	width:2rem;
+     }
+      .chanshu-list ul li:nth-child(2){
+     	width:4.9rem;
+     }
+     .chanshu-list ul li{
+     	height:0.8rem;
+     	font-weight: 400;
+	    line-height: 0.8rem;
+	    text-align: left;
+	    color: #727272;
+	    font-size:0.3rem;
+     }
+     .chanshu-list .red li:nth-child(2){
+     	color:#eb4868;
+     }
+     #shop-message{
+     	width:100%;
+     }
+     .shop-message-head{
+     	width:100%;
+     	padding:0 0.3rem;
+     }
+     .shop-message-head .title{
+     	padding: .4rem 0 .3rem;
+	    color: #333;
+	    font-size: .3rem;
+	    display: block;
+        line-height: .3rem;
+        font-sieze:0.3rem;
+     }
+     .shop-message-head .title .more{
+     	float: right;
+	    color: #666;
+	    font-size: .26rem;
+     }
+     .shop-message-head .title .more .next{
+     	vertical-align: middle;
+     }
+     .shop-message-list{
+     	width:100%;
+     	padding:0 0.3rem;
+     }
+     .shop-message-list .message{
+     	border-top:1px solid #eee;
+     	padding-top:0.3rem;
+     	margin-bottom:0.3rem;
+     }
+     .message-user .user-info{
+     	display: inline-block;
+    	line-height: 0.82rem;
+     }
+     .message-user .user-info img{
+     	width: 0.82rem;
+	    height: 0.82rem;
+	    border: 1px solid #efefef;
+	    border-radius: 50%;
+	    vertical-align: middle;
+     }
+     .message-user .user-info .name{
+     	margin-left: .2rem;
+	    color: #424242;
+	    font-size: .3rem;
+	    vertical-align: middle;
+     }
+     .message-cont{
+     	line-height: .34rem;
+	    margin-top: .1rem;
+	    color: #727272;
+	    font-size: .28rem;
+     }
+     .message-attr{
+     	line-height: .24rem;
+        margin-top: .15rem;
+        font-size: .28rem;
+        color: #999;
+     }
+     .message-shop{
+     	line-height: .34rem;
+	    margin-top: .52rem;
+	    color: #727272;
+	    font-size: .28rem;
+     }
+     #shop-recommend{
+     	width:100%;
+     }
+     #shop-recommend .recommend-head{
+     	padding:0 0.3rem;
+     }
+     #shop-recommend .recommend-head span{
+     	display: block;
+	    line-height: .3rem;
+	    padding: .4rem 0 .3rem;
+	    color: #333;
+	    font-size: .3rem;
+     }
+     .recommend-lists{
+     	width:100%;
+     }
+      .recommend-lists ul{
+     	display: flex;
+     	flex-wrap: wrap;
+     }
+     .recommend-lists ul li{
+     	width:50%;
+     }
+     .recommend-lists ul li:nth-child(2n+1){
+     	padding-left: .1rem;
+       	margin-bottom: .3rem;
+     }
+     .recommend-lists ul li:nth-child(2n){
+     	padding-left: .1rem;
+       	margin-bottom: .3rem;
+     }
+     .recommend-lists ul li a{
+     	width: 100%;
+     	display: block;
+	    position: relative;
+	    overflow: hidden;
+     }
+     .recommend-lists ul li a .img{
+     	width:100%;
+     	height:4.67rem;
+     }
+     .recommend-lists ul li a .img img{
+     	width:100%;
+     	height:4.67rem;
+     }
+     .recommend-lists ul li a .info{
+     	position: relative;
+	    background: #fff;
+	    font-size: 0.24rem;
+	    overflow: hidden;
+     }
+     .recommend-lists .info p:nth-child(1){
+     	    text-align: center;
+		    height: .24rem;
+		    line-height: .24rem;
+		    font-size: .24rem;
+		    overflow: hidden;
+		    color: #666;
+		    margin-top: .15rem;
+     }
+     .recommend-lists .info p:nth-child(2){
+     	white-space: nowrap;
+	    overflow: hidden;
+	    text-align: center;
+	    line-height: .24rem;
+	    margin-top: .15rem;
+     }
+     .recommend-lists .info .meta span:nth-child(1){
+     	    font-size: .23rem;
+		    margin-right: 0.2rem;
+		    color: #f36;
+     }
+     .recommend-lists .info .meta span:nth-child(2){
+     	font-size: .23rem;
+    	color: #999;
+     }
+     #footer .shouchang,#footer .gouwuche{
+     	width:1.14rem;
+     	height:100%;
+     	display: flex;
+     	flex-direction: column;
+     	border-right:1px solid #DDDDDD;
+     }
+     #footer .shouchang i:before,#footer .gouwuche i:before{
+     	font-size:0.4rem;
+     }
+     #footer .shouchang i,#footer .gouwuche i{
+     	margin-top:0.12rem;
+     }
+     #footer .shouchang span,#footer .gouwuche span{
+     	margin-top:0.05rem;
+     }
+     #footer .shouchang i,#footer .shouchang span,#footer .gouwuche i,#footer .gouwuche span{
+     	align-self: center;
+     }
+     #footer .jiaru, #footer .goumai{
+     	width:2.61rem;
+     	height:100%;
+     	text-align: center;
+     	line-height: 45px;
+     	font-size:0.3rem;
+     }
+     #footer .jiaru a, #footer .goumai a{
+     	color:#fff;
+     }
+     #footer .jiaru{
+     	background:#FF8587;
+     }
+     #footer .goumai{
+     	background:#E31436;
+     }

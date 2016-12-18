@@ -1,0 +1,115 @@
+.swiper-container{
+	width:100%;
+	height:5.22rem;
+}
+.swiper-container a{
+	width:100%;
+	height:5.22rem;
+	display: block;
+}
+.swiper-container a img{
+	width:100%;
+	height:5.22rem;
+}
+#scroller .tuijie{
+	width:100%;
+	height:1.56rem;
+	background:#FFFFFF;
+}
+#scroller .tuijie .tuijie-warpe{
+	width:100%;
+	height:1.56rem;
+	padding:0.3rem 0.5rem;
+	display: -webkit-box;
+	display: flex;
+}
+#scroller .tuijie .tuijie-warpe div{
+	width:25%;
+}
+#scroller .tuijie .tuijie-warpe .content-list{
+	display: flex;
+	flex-direction: column;
+}
+#scroller .tuijie .tuijie-warpe .content-list .pic{
+	width:0.62rem;
+	height:0.62rem;
+	align-self: center;
+}
+#scroller .tuijie .tuijie-warpe .content-list:nth-child(1) .pic{
+	background:url(../img/1_03.png);
+	background-size:cover;
+}
+#scroller .tuijie .tuijie-warpe .content-list:nth-child(2) .pic{
+	background:url(../img/1_05.png);
+	background-size:cover;
+}
+#scroller .tuijie .tuijie-warpe .content-list:nth-child(3) .pic{
+	background:url(../img/1_07.png);
+	background-size:cover;
+}
+#scroller .tuijie .tuijie-warpe .content-list:nth-child(4) .pic{
+	background:url(../img/1_09.png);
+	background-size:cover;
+}
+#scroller .tuijie .tuijie-warpe .content-list span{
+	font-size:0.22rem;
+	color:#333333;
+	align-self: center;
+	margin-top:0.1rem;
+}
+.content-item{
+	width:100%;
+}
+.content-item-title{
+	width:100%;
+	height:5.28rem;
+	background:url(../img/2_03.png);
+	background-size:cover;
+}
+.content-item-inner .swiper-container {
+        width: 100%;
+        height: 100%;
+        background: #FFFFFF;
+    }
+.content-item-inner .swiper-slide {
+	   height:3.35rem;
+        text-align: center;
+        font-size: 18px;
+        background: #FFFFFF;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        /*-webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;*/
+       flex-direction: column;
+    }
+.content-item-inner .swiper-slide .pic{
+	width:100%;
+	height:2.57rem;
+	margin-bottom:0.2rem;
+}
+.content-item-inner .swiper-slide p{
+	font-size:0.3rem;
+	color:#A1A1A1;
+}
+.content-item-list{
+	width:100%;
+	height:1.88rem;
+	margin-top:0.15rem;
+	background:#F0F0F0;
+	display: flex;
+	justify-content: space-between;
+}
+.content-item-list img{
+	width:3.70rem;
+	height:1.88rem;
+}
